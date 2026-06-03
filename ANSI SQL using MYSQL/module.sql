@@ -1,0 +1,16 @@
+SHOW DATABASES;
+USE ansi_sql;
+SHOW TABLES;
+DESCRIBE users;
+SELECT * FROM users;
+SELECT * FROM events;
+SELECT * FROM sessions;
+SELECT * FROM registrations;
+SELECT * FROM feedback;
+SELECT * FROM resources;
+SELECT COUNT(*) AS users_count FROM users;
+SELECT COUNT(*) AS events_count FROM events;
+SELECT COUNT(*) AS sessions_count FROM sessions;
+SELECT COUNT(*) AS registrations_count FROM registrations;
+SELECT COUNT(*) AS feedback_count FROM feedback;
+SELECT COUNT(*) AS resources_count FROM resources;

@@ -1,0 +1,43 @@
+body{
+    font-family: Arial;
+    margin: 20px;
+}
+
+h1{
+    color: darkblue;
+}
+
+.top-section{
+    margin-bottom: 20px;
+}
+
+input,
+select,
+button{
+    padding: 8px;
+    margin: 5px;
+}
+
+.event-card{
+    border: 1px solid gray;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.event-card button{
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.event-card button:hover{
+    background-color: darkgreen;
+}
+
+#message{
+    color: blue;
+    font-weight: bold;
+}
