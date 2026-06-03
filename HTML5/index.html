@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+        <h1>Community Event Portal</h1>
+
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+
+        <a href="help.html" target="_blank">Help</a>
+    </nav>
+
+    <!-- Main -->
+
+    <section id="home">
+
+        <div id="welcomeBanner">
+            <h2>Welcome Residents</h2>
+
+            <p>
+                Join in community programs and activities.
+
+                <span style="color:red;font-weight:bold;">
+                    Special Offer: Registration Free this Week!
+                </span>
+            </p>
+        </div>
+
+    </section>
+
+    <section id="events">
+
+        See all the events organized by the community.View all community events.
+
+        <table>
+
+            <tr>
+                <td>
+                    <img src="images/event1.jpg"
+                        alt="Tree Plantation"
+                        title="Tree Plantation"
+                        class="gallery-image">
+
+                    <p>Tree Plantation Drive</p>
+                </td>
+
+                <td>
+                    <img src="images/event2.jpg"
+                        alt="Marathon"
+                        title="Marathon"
+                        class="gallery-image">
+
+                    <p>City Marathon</p>
+                </td>
+
+                <td>
+                    <img src="images/event3.jpg"
+                        alt="Music Show"
+                        title="Music Show"
+                        class="gallery-image">
+
+                    <p>Music Festival</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="images/event4.jpg"
+                        alt="Health Camp"
+                        title="Health Camp"
+                        class="gallery-image">
+
+                    <p>Health Camp</p>
+                </td>
+
+                <td>
+                    <img src="images/event5.jpg"
+                        alt="Sports Day"
+                        title="Sports Day"
+                        class="gallery-image">
+
+                    <p>Sports Day</p>
+                </td>
+
+                <td>
+                    <img src="images/event6.jpeg"
+                        alt="Book Fair"
+                        title="Book Fair"
+                        class="gallery-image">
+
+                    <p>Book Fair</p>
+                </td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section>
+
+        <h2 class="highlight">Event Registration</h2>
+
+        <form id="registrationForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+                autofocus>
+
+            <input
+                type="email"
+                placeholder="Enter email"
+                required>
+
+            <input
+                type="date"
+                required>
+
+            <select id="eventType" required>
+
+                <option value="">Choose Event</option>
+
+                <option value="Plantation">
+                    Tree Plantation
+                </option>
+
+                <option value="Marathon">
+                    Marathon
+                </option>
+
+                <option value="Music">
+                    Music Festival
+                </option>
+
+            </select>
+
+            <textarea
+                id="message"
+                placeholder="Write your message">
+            </textarea>
+
+            <input
+                type="text"
+                id="phone"
+                placeholder="Phone Number"
+                onblur="validatePhone()">
+
+            <button
+                type="button"
+                onclick="registerUser()">
+                Register
+            </button>
+
+            <output id="outputMessage"></output>
+
+        </form>
+
+    </section>
+
+    <section>
+
+        <h2>Feedback</h2>
+
+        <textarea
+            id="feedback"
+            placeholder="Give feedback"
+            onkeyup="countCharacters()">
+        </textarea>
+
+        <p>
+            Characters:
+            <span id="charCount">0</span>
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Promo Video</h2>
+
+        <video
+            width="500"
+            controls
+            oncanplay="videoReady()">
+
+            <source
+                src="videos/promo.mp4"
+                type="video/mp4">
+
+        </video>
+
+        <p id="videoMessage"></p>
+
+    </section>
+
+    <section>
+
+        <h2>Find Nearby Events</h2>
+
+        <button onclick="findLocation()">
+            Find Nearby Events
+        </button>
+
+        <p id="locationResult"></p>
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>Email: support@communityportal.com</p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            Legal, Privacy, Refunds, and Audio Policy
+        </p>
+
+        <button onclick="clearPreferences()">
+            Clear Preferences
+        </button>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+}
+
+nav{
+    background:#333;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:15px;
+}
+
+#welcomeBanner{
+    background:skyblue;
+    padding:20px;
+    margin-top:10px;
+}
+
+.highlight{
+    color:darkblue;
+}
+
+.gallery-image{
+    width:200px;
+    height:140px;
+    border:2px solid black;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    width:350px;
+    gap:10px;
+}
+
+button{
+    width:150px;
+    padding:10px;
+}
